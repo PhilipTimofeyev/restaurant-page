@@ -1,2 +1,4 @@
 import "./styles.css";
-console.log("I did it")
+import { home } from "./home.js";
+
+console.log(home)
