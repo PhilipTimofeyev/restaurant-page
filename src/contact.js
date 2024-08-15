@@ -11,27 +11,27 @@ const header = function() {
 	div.appendChild(title);
 }
 
-const tab = function() {
-	const tabName = document.createElement("h3")
-	const node = document.createTextNode("Tasty meals and even tastier meals!");
-	tabName.appendChild(node);
 
-	div.appendChild(tabName);
-}
+const contactInfo = function() {
+	const phone = document.createElement("p")
+	phone.innerText = "Phone: 555-555-5555"
 
-const welcome = function() {
-	const welcomeParagraph = document.createElement("p")
-	const node = document.createTextNode("At Tasty Meals we believe that soul is at the heart of every meal.");
-	welcomeParagraph.appendChild(node);
+	const email = document.createElement("p")
+	email.innerText = "Email: tasty@meals.com"
 
-	div.appendChild(welcomeParagraph);
+	const address = document.createElement("p")
+	address.innerText = "1234 Tasty Meal Dr. Los Angeles, California"
+
+	let toAppend = [phone, email, address]
+	toAppend.forEach((el) => {div.appendChild(el); console.log(el)})
+	// div.appendChild(phone);
 }
 
 
 const contact = function() {
 	header()
-	tab()
-	welcome()
+	// tab()
+	contactInfo()
 	return div
 }
 
