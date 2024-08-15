@@ -31,10 +31,8 @@ nav {
   margin-bottom: 40px;
 }
 
-header {
-}
 
-#content {
+#main-div {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;

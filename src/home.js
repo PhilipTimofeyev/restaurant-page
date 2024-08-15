@@ -1,11 +1,15 @@
 
 const content = document.getElementById('content')
 
-const home = function() {
-	header()
-	tab()
-	welcome()
-}
+// const addDiv = function() {
+	const div = document.createElement("div")
+	div.setAttribute("id", "main-div");
+
+	// content.appendChild(div);
+// }
+
+// const addDiv()
+// const div = document.getElementById("main-div")
 
 
 const header = function() {
@@ -13,7 +17,7 @@ const header = function() {
 	const node = document.createTextNode("Home");
 	title.appendChild(node);
 
-	content.appendChild(title);
+	div.appendChild(title);
 }
 
 const tab = function() {
@@ -21,7 +25,7 @@ const tab = function() {
 	const node = document.createTextNode("Tasty meals and even tastier meals!");
 	tabName.appendChild(node);
 
-	content.appendChild(tabName);
+	div.appendChild(tabName);
 }
 
 const welcome = function() {
@@ -29,8 +33,21 @@ const welcome = function() {
 	const node = document.createTextNode("At Tasty Meals we believe that soul is at the heart of every meal.");
 	welcomeParagraph.appendChild(node);
 
-	content.appendChild(welcomeParagraph);
+	div.appendChild(welcomeParagraph);
+}
+
+
+const home = function() {
+	header()
+	tab()
+	welcome()
+	content.appendChild(div);
 }
 
 
 export {home};
+
+
+
+
+

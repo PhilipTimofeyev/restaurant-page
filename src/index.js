@@ -1,4 +1,10 @@
 import "./styles.css";
 import { home } from "./home.js";
 
-console.log(home())
+// home()
+
+const homeBtn = document.getElementById('homeBtn')
+
+homeBtn.addEventListener("click", function() {
+	home()
+});
