@@ -11,27 +11,43 @@ const header = function() {
 	div.appendChild(title);
 }
 
-const tab = function() {
-	const tabName = document.createElement("h3")
-	const node = document.createTextNode("Tasty meals and even tastier meals!");
-	tabName.appendChild(node);
+const lunch = function() {
+	const lunchHeading = document.createElement("h3")
+	const node = document.createTextNode("Lunch");
+	lunchHeading.appendChild(node);
 
-	div.appendChild(tabName);
+	div.appendChild(lunchHeading);
+
+	let menuItems = ["Chicken Wings (8)", "Burger", "Cheeseburger", "Pizza", "Fries"];
+
+	menuItems.forEach((el) => {
+	    let li = document.createElement('li');
+	    li.innerText = el;
+	    div.appendChild(li);
+	})
 }
 
-const welcome = function() {
-	const welcomeParagraph = document.createElement("p")
-	const node = document.createTextNode("At Tasty Meals we believe that soul is at the heart of every meal.");
-	welcomeParagraph.appendChild(node);
+const dinner = function() {
+	const dinnerHeading = document.createElement("h3")
+	const node = document.createTextNode("Dinner");
+	dinnerHeading.appendChild(node);
 
-	div.appendChild(welcomeParagraph);
+	div.appendChild(dinnerHeading);
+
+	let menuItems = ["Steak", "Filet Mignon", "Carbonara Pasta", "Salmon", "Salad"];
+
+	menuItems.forEach((el) => {
+	    let li = document.createElement('li');
+	    li.innerText = el;
+	    div.appendChild(li);
+	})
 }
-
 
 const menu = function() {
 	header()
-	tab()
-	welcome()
+	lunch()
+	dinner()
+	// welcome()
 	return div
 }
 
