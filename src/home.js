@@ -21,7 +21,7 @@ const tab = function() {
 
 const welcome = function() {
 	const welcomeParagraph = document.createElement("p")
-	const node = document.createTextNode("At Tasty Meals we believe that soul is at the heart of every meal.");
+	const node = document.createTextNode("'At Tasty Meals we believe that soul is at the heart of every meal.' - Chef Tasty");
 	welcomeParagraph.appendChild(node);
 
 	div.appendChild(welcomeParagraph);
