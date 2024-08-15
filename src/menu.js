@@ -5,7 +5,7 @@ div.setAttribute("id", "main-div");
 
 const header = function() {
 	const title = document.createElement("h2")
-	const node = document.createTextNode("Home");
+	const node = document.createTextNode("Menu");
 	title.appendChild(node);
 
 	div.appendChild(title);
@@ -28,12 +28,16 @@ const welcome = function() {
 }
 
 
-const home = function() {
+const menu = function() {
 	header()
 	tab()
 	welcome()
 	return div
 }
 
-export {home};
+export {menu};
+
+
+
+
 
